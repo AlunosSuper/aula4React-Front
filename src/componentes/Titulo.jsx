@@ -41,7 +41,7 @@ const Texto = styled.h1`
   white-space: nowrap;  /* NÃO QUEBRA LINHA */
 `;
 
-export default function Titulo({ nome, imagem }) {
+export function Titulo({ nome, imagem }) {
   return (
     <Banner imagem={imagem}>
       <Conteudo>
