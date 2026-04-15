@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
+// Modelo principal (Container externo)
 const ModeloCampo = styled.div`
   background: white;
   padding: 32px;
   margin: 32px 0;
 `;
 
+// Modelo para organizar os itens internos (Flexbox moderno)
 const CampoInterno = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -13,7 +15,8 @@ const CampoInterno = styled.div`
   justify-content: center;
 `;
 
-export default function Campo({ children }) {
+// Componente Funcional Campo que recebe os filhos (children) para renderizar dentro do modelo
+export function Campo({ children }) {
   return (
     <ModeloCampo>
       <CampoInterno>
